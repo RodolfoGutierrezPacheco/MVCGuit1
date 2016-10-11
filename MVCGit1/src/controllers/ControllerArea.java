@@ -48,13 +48,13 @@ public class ControllerArea implements ActionListener {
     
     public void areaCirculo()   {
         Double radio = Double.parseDouble(viewArea.jtf_radio.getText());
-        viewArea.jtf_resultadoCirculo.setText(""+modelArea.areaCirculo(radio)+" cm");
+        viewArea.jtf_resultadoCirculo.setText(""+modelArea.areaCirculo(radio)+" cm2");
         dataFlow.stringToDouble(radio.toString());
     }
     
     public void areaCuadrado()  {
         Double lado=Double.parseDouble(viewArea.jtf_lado.getText());
-        viewArea.jtf_resultadoCuadrado.setText(""+modelArea.areaCuadrado(lado)+" cm");
+        viewArea.jtf_resultadoCuadrado.setText(""+modelArea.areaCuadrado(lado)+" cm2");
         dataFlow.stringToDouble(lado.toString());
     }
     
