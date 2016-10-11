@@ -61,7 +61,7 @@ public class ControllerArea implements ActionListener {
     public void areaTriangulo() {
         Double base=Double.parseDouble(viewArea.jtf_base.getText());
         Double altura=Double.parseDouble(viewArea.jtf_altura.getText());
-        viewArea.jb_calcularTriangulo.setText(""+modelArea.areaTriangulo(base, altura)+" cm");
+        viewArea.jtf_resultadoTriangulo.setText(""+modelArea.areaTriangulo(base, altura)+" cm");
         dataFlow.stringToDouble(base.toString());
         dataFlow.stringToDouble(altura.toString());
     }
