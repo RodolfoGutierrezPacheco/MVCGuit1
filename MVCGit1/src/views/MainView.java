@@ -27,7 +27,28 @@ public class MainView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jmb_menu = new javax.swing.JMenuBar();
+        jm_file = new javax.swing.JMenu();
+        jmi_perimetro = new javax.swing.JMenuItem();
+        jmi_area = new javax.swing.JMenuItem();
+        jmi_volumen = new javax.swing.JMenuItem();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jm_file.setText("Menú de opciones");
+
+        jmi_perimetro.setText("Cálculo de perímetro");
+        jm_file.add(jmi_perimetro);
+
+        jmi_area.setText("Cálculo de área");
+        jm_file.add(jmi_area);
+
+        jmi_volumen.setText("Cálculo de volúmen");
+        jm_file.add(jmi_volumen);
+
+        jmb_menu.add(jm_file);
+
+        setJMenuBar(jmb_menu);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -37,7 +58,7 @@ public class MainView extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 277, Short.MAX_VALUE)
         );
 
         pack();
@@ -79,5 +100,10 @@ public class MainView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JMenu jm_file;
+    public javax.swing.JMenuBar jmb_menu;
+    public javax.swing.JMenuItem jmi_area;
+    public javax.swing.JMenuItem jmi_perimetro;
+    public javax.swing.JMenuItem jmi_volumen;
     // End of variables declaration//GEN-END:variables
 }
