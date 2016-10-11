@@ -49,20 +49,20 @@ public class ControllerVolumen implements ActionListener {
     
     public void volumenCubo() {
         Double ladoCubo = Double.parseDouble(viewVolumen.jtf_ladoCubo.getText());
-        viewVolumen.jtf_resultadoCubo.setText("" + modelVolumen.volumenCubo(ladoCubo));
+        viewVolumen.jtf_resultadoCubo.setText("" + modelVolumen.volumenCubo(ladoCubo) + " cm3");
         dataFlow.stringToDouble(ladoCubo.toString());
     }
     
     public void volumenEsfera() {
         Double radioEsfera = Double.parseDouble(viewVolumen.jtf_radioEsfera.getText());
-        viewVolumen.jtf_resultadoEsfera.setText("" + modelVolumen.volumenEsfera(radioEsfera));
+        viewVolumen.jtf_resultadoEsfera.setText("" + modelVolumen.volumenEsfera(radioEsfera) + " cm3");
         dataFlow.stringToDouble(radioEsfera.toString());
     }
     
     public void volumenCilindro() {
         Double radioCilindro = Double.parseDouble(viewVolumen.jtf_radioCilindro.getText());
         Double alturaCilindro = Double.parseDouble(viewVolumen.jtf_alturaCilindro.getText());
-        viewVolumen.jtf_resultadoCilindro.setText("" + modelVolumen.volumenCilindro(radioCilindro, alturaCilindro));
+        viewVolumen.jtf_resultadoCilindro.setText("" + modelVolumen.volumenCilindro(radioCilindro, alturaCilindro) + " cm3");
         dataFlow.stringToDouble(radioCilindro.toString());
         dataFlow.stringToDouble(alturaCilindro.toString());
     }

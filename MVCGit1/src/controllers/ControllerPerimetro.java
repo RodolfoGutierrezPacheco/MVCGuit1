@@ -49,19 +49,19 @@ public class ControllerPerimetro implements ActionListener {
     
     public void perimetroCirculo() {
         Double diametro = Double.parseDouble(viewPerimetro.jtf_diametro.getText());
-        viewPerimetro.jtf_resultadoCirculo.setText("" + modelPerimetro.perimetroCirculo(diametro));
+        viewPerimetro.jtf_resultadoCirculo.setText("" + modelPerimetro.perimetroCirculo(diametro) + " cm");
         dataFlow.stringToDouble(diametro.toString());
     }
     
     public void perimetroCuadrado() {
         Double lado = Double.parseDouble(viewPerimetro.jtf_lado.getText());
-        viewPerimetro.jtf_resultadoCuadrado.setText("" + modelPerimetro.perimetroCuadrado(lado));
+        viewPerimetro.jtf_resultadoCuadrado.setText("" + modelPerimetro.perimetroCuadrado(lado) + " cm");
         dataFlow.stringToDouble(lado.toString());
     }
     
     public void perimetroTriangulo() {
         Double angulo = Double.parseDouble(viewPerimetro.jtf_angulo.getText());
-        viewPerimetro.jtf_resultadoTriangulo.setText("" + modelPerimetro.perimetroTriangulo(angulo));
+        viewPerimetro.jtf_resultadoTriangulo.setText("" + modelPerimetro.perimetroTriangulo(angulo) + " cm");
         dataFlow.stringToDouble(angulo.toString());
     }
 }
