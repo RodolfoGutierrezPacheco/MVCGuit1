@@ -19,7 +19,7 @@ public class Main {
         
         ModelArea modelArea = new ModelArea();
         ViewArea viewArea = new ViewArea();
-        ControllerArea controllerArea = new ControllerArea();
+        ControllerArea controllerArea =new ControllerArea(modelArea, viewArea, dataFlow);
         
         ModelVolumen modelVolumen = new ModelVolumen();
         ViewVolumen viewVolumen = new ViewVolumen();
